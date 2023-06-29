@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Upload Files</title>
+    <!-- <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet"> -->
+</head>
+<body>
+    <form action="/Subscribe" method="post" enctype="multipart/form-data">
+        
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <!-- <br><br> -->
+        <label for="coin_name">Coin Name</label>
+        <input type="text" id="coin_name" name="coin_name">
+
+        <label for="price_change">Price Change</label>
+        <input type="text" id="price_change" name="price_change">
+
+        <input type="submit" value="Subscribe">
+    </form>
+    <br><br>
+    <form action="/price" method="post" enctype="multipart/form-data">
+      <label for="coin_name">Coin Name</label>
+      <input type="text" id="coin_name" name="coin_name">
+
+      <input type="submit" value="get History">
+  </form>
+
+</body>
+</html>
